@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pens </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.jpeg" alt="InkCraft Studios Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pens.html">Pens</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search ..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="catalog">
+        <div class="product" data-name="Elite Fountain Pen">
+            <img src="pen1.webp" alt="Elite Fountain Pen">
+            <h3>Elite Fountain Pen</h3>
+            <p>Description:<br>
+               A premium fountain pen crafted with a stainless steel nib, polished brass body, and ergonomic design for smooth, effortless writing. Perfect for professionals and enthusiasts.</p>
+               <span>$89.99 BZD</span>
+            <button onclick="addToCart('Elite Fountain Pen', 89.99)">Add to Cart</button>
+        </div>
+           <div class="product" data-name=" ScribePro Rollerball Pen">
+               <img src="pen2.webp" alt=" ScribePro Rollerball Pen">
+               <h3>ScribePro Rollerball Pen</h3>
+               <p>Description:<br>  
+                   A sleek, modern rollerball pen with a precision tip for consistent ink flow. Features a matte finish and comes in a variety of colors. Ideal for everyday use.</p>
+               <span> $29.99 BZD</span>
+               <button onclick="addToCart('ScribePro Rollerball Pen', 29.99)">Add to Cart</button>
+           </div>
+           <div class="product" data-name=" Artisan Wooden Ballpoint Pen">
+               <img src="pen3.webp" alt=" Artisan Wooden Ballpoint Pen">
+               <h3> Artisan Wooden Ballpoint Pen</h3>
+               <p>Description:<br>
+                   Handcrafted from sustainable rosewood, this ballpoint pen combines elegance and eco-friendliness. Includes a refillable ink cartridge for long-term use.</p>
+               <span>$49.99 BZD</span>
+               <button onclick="addToCart(' Artisan Wooden Ballpoint Pen', 49.99)">Add to Cart</button>
+           </div>
+
+        <div class="product" data-name=" InkCraft Signature Pen Set">
+            <img src="p4.webp" alt=" InkCraft Signature Pen Set">
+            <h3> InkCraft Signature Pen Set</h3>
+            <p>Description:<br>
+                A luxurious gift set featuring a fountain pen, rollerball pen, and ballpoint pen, all housed in a premium leather case. Perfect for gifting or personal use.
+            </p>
+            <span>$149.99 BZD</span>
+            <button onclick="addToCart(' InkCraft Signature Pen Set', 149.99)">Add to Cart</button>
+        </div>
+        <div class="product" data-name=" PixelStylus Hybrid Pen">
+            <img src="pen5.webp" alt=" PixelStylus Hybrid Pen">
+            <h3> PixelStylus Hybrid Pen</h3>
+            <p>Description:<br>
+                A 2-in-1 pen and stylus designed for both writing on paper and navigating touchscreens. Features a durable aluminum body and magnetic cap.</p>
+            <span>$39.99 BZD</span>
+            <button onclick="addToCart(' PixelStylus Hybrid Pen', 39.99)">Add to Cart</button>
+        </div>
+    
+        <!-- Add more products as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 InkCraft Studios. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

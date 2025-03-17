@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkCraft Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.jpeg" alt="InkCraft Studios Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pens.html">Pens</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search ..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section with Slideshow -->
+    <section class="welcome-section">
+        <div class="slideshow-container">
+            <img src="p1.jpeg" class="active" alt="Pen 1">
+            <img src="p2.jpeg" alt="Pen 2">
+            <img src="p3.jpeg" alt=" Pen 3">
+        </div>
+        <div class="welcome-title">
+            <h1>Welcome to InkCraft Studios</h1>
+            <h4>Crafting Words, Inspiring Ideas.</h4>
+        </div>
+    </section>
+    <h1 class="about"><center>About Us</center></h1>
+    <p class="aboutstones">At InkCraft Studios, we believe that every word matters. Founded in 2023, our mission is to create writing instruments that inspire creativity, elevate everyday moments, and celebrate the art of writing. We are passionate about crafting pens that are not just tools, but extensions of your personality and style.
+
+        Our journey began with a simple idea: to combine timeless craftsmanship with modern innovation. Each of our pens is meticulously designed to deliver a seamless writing experience, whether you're signing an important document, jotting down ideas, or creating a masterpiece. From premium fountain pens to eco-friendly wooden designs, every product reflects our commitment to quality, sustainability, and elegance.</p>
+
+
+
+
+ <!-- Product Catalog -->
+ <h1 class="best">New Arrivals</h1>
+ <section id="catalog">
+     <div class="product" data-name="Elite Fountain Pen">
+         <img src="pen1.webp" alt="Elite Fountain Pen">
+         <h3>Elite Fountain Pen</h3>
+         <p>Description:<br>
+            A premium fountain pen crafted with a stainless steel nib, polished brass body, and ergonomic design for smooth, effortless writing. Perfect for professionals and enthusiasts.</p>
+            <span>$89.99 BZD</span>
+         <button onclick="addToCart('Elite Fountain Pen', 89.99)">Add to Cart</button>
+     </div>
+        <div class="product" data-name=" ScribePro Rollerball Pen">
+            <img src="pen2.webp" alt=" ScribePro Rollerball Pen">
+            <h3>ScribePro Rollerball Pen</h3>
+            <p>Description:<br>  
+                A sleek, modern rollerball pen with a precision tip for consistent ink flow. Features a matte finish and comes in a variety of colors. Ideal for everyday use.</p>
+            <span> $29.99 BZD</span>
+            <button onclick="addToCart('ScribePro Rollerball Pen', 29.99)">Add to Cart</button>
+        </div>
+        <div class="product" data-name=" Artisan Wooden Ballpoint Pen">
+            <img src="pen3.webp" alt=" Artisan Wooden Ballpoint Pen">
+            <h3> Artisan Wooden Ballpoint Pen</h3>
+            <p>Description:<br>
+                Handcrafted from sustainable rosewood, this ballpoint pen combines elegance and eco-friendliness. Includes a refillable ink cartridge for long-term use.</p>
+            <span>$49.99 BZD</span>
+            <button onclick="addToCart(' Artisan Wooden Ballpoint Pen', 49.99)">Add to Cart</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 InkCraft Studios. All rights reserved.</p>
+    </footer>
+</body>
+</html>
